@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Employee</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="/registerEmp" method="post" enctype="multipart/form-data">
+        <h1>New Employee</h1>
+        <fieldset>
+            <label for="name">Employee Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="mail">Employee Id:</label>
+            <input type="text" id="mail" name="empId">
+
+            <label for="file">File</label>
+            {{!-- <input type="text"  name="file"> --}}
+            <input type="file" name="applications" multiple/>
+
+        </fieldset>
+        <input type="submit" value="Create" class="btnEmp" style="cursor: pointer;">
+    </form>
+</body>
+
+</html>
